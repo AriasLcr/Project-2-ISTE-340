@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
 
-const About = ({ ad = [] }) => {
+const About = ({ ad = {} }) => { 
     return (
         <>
         <div className='About'>
@@ -12,11 +13,16 @@ const About = ({ ad = [] }) => {
             </div>
         </div>
         </>
-    )
+    );
 };
 
 About.PropTypes = {
-    ad : PropTypes.array,
-}
+    ad: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string,
+        quote: PropTypes.string,
+        quoteAuthor: PropTypes.string,
+    }),
+};
 
-export default About
+export default About;
