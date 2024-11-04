@@ -1,5 +1,5 @@
 # ISTE-340 Project 2: iSchool Page using React.js
-# iSchool Web Presence Project
+## iSchool Web Presence Project
 
 This project is a professional web presence for the iSchool at RIT, leveraging information from an existing API and enhancing user experience through custom and third-party React UI components.
 
