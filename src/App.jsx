@@ -2,8 +2,9 @@
 
 import {useState, useEffect} from 'react'
 import About from './components/About.jsx'
-import People from './components/People.jsx'
+// import People from './components/People.jsx'
 import getData from './utils/getData.js'
+import PeopleTabs from './components/PeopleTabs.jsx'
 
 
 import './App.css'
@@ -40,7 +41,7 @@ const App=()=>{
       
       <div className='App'>
         <About ad={about}/>
-        <People />
+        <PeopleTabs />
       </div>
     </>
   )

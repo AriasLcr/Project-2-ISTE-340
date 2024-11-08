@@ -16,7 +16,7 @@ const About = ({ ad = {} }) => {
     );
 };
 
-About.PropTypes = {
+About.propTypes = {
     ad: PropTypes.shape({
         title: PropTypes.string,
         description: PropTypes.string,
