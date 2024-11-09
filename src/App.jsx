@@ -1,12 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import {useState, useEffect} from 'react'
 import About from './components/About.jsx'
-// import People from './components/People.jsx'
 import getData from './utils/getData.js'
 import PeopleTabs from './components/PeopleTabs.jsx'
-
-
+import Navbar from './components/Navbar.jsx'
 import './App.css'
 
 const App=()=>{
@@ -25,8 +21,8 @@ const App=()=>{
 
   if(!aboutLoaded) return(
     <>
-      <div className='stick'>
-        <h1>Welcome to Gabe's iSchool Site</h1>
+      <Navbar/>
+      <div>
         <div>LOADING...</div>
       </div>
     </>
@@ -34,12 +30,8 @@ const App=()=>{
 
   return(
     <>
-      <div className='stick'>
-        <h1>Welcome to Gabe's iSchool Site</h1>
-        <div>...Menu of some sort...</div>
-      </div>
-      
-      <div className='App'>
+      <Navbar/>
+      <div className=''>
         <About ad={about}/>
         <PeopleTabs />
       </div>

@@ -1,21 +1,19 @@
-import PeopleModal from "./PeopleModal"
+import PeopleCard from "./PeopleCard";
 
-const PeopleGroup = ({title, obj}) => {
+const PeopleGroup = ({ title, obj }) => {
     return (
         <>
-            <h1>{title}</h1>
+            <h1 className="text-2xl font-bold mb-6">{title}</h1>
 
-            <div className="peopleList">
-                {/* Loop */}
-                {obj.map((p)=>
-                    <div className="peopleListItem" key={p.username}>
-                        <img src={p.imagePath} alt="pic person"/>
-                        <PeopleModal {...p} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                {obj.map((p) => (
+                    <div className="m-10">
+                        <PeopleCard key={p.username} {...p} />
                     </div>
-                )};
+                ))}
             </div>
         </>
-    )
+    );
 }
 
 export default PeopleGroup;
