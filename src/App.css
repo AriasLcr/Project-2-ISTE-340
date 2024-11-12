@@ -2,16 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* App.css */
-
-/* Apply a simple reset for margin, padding, and box-sizing */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styling for the body */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -21,19 +17,16 @@ body {
     background-color: #fff;
 }
 
-/* Styling for the root container (mainly to fill the screen) */
 #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Utility class (often added by default) */
 .App {
     text-align: center;
 }
 
-/* Header or basic container styling */
 .App-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -46,5 +39,5 @@ body {
 }
 
 .navbar-link {
-    margin-left: 1rem; /* Example of custom margin */
+    margin-left: 1rem;
 }

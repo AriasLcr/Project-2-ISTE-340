@@ -29,13 +29,13 @@ const App=()=>{
   )
 
   return(
-    <>
+    <div>
       <Navbar/>
-      <div className=''>
+      <div className='px-20'>
         <About ad={about}/>
         <PeopleTabs />
       </div>
-    </>
+    </div>
   )
 }
 

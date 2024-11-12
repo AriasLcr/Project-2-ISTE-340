@@ -25,7 +25,11 @@ const PeopleTabs = () => {
         });
     }, []);
 
-    if(!loaded) return <h1>Loading People...</h1>
+    if(!loaded) return (
+        <div className='w-full m-20 '>
+            <h1>Loading People...</h1>
+        </div>
+    );
 
     return (
         <>
