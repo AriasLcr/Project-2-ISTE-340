@@ -22,7 +22,7 @@ const PeopleModal = ({ person }) => {
             onOpen={handleOpen}
             open={open}
             trigger={<Button>{person.name}</Button>}
-            size='medium'
+            size='small'
         >
             <ModalHeader>{person.name}</ModalHeader>
             <ModalContent image>
@@ -42,12 +42,12 @@ const PeopleModal = ({ person }) => {
                     )}
                     {person.phone && (
                         <p>
-                            <strong>Phone:</strong> {person.phone}
+                            <strong>Phone:</strong> <a href={`tel:+1${person.phone}`} className='hover:underline'>{person.phone}</a>
                         </p>
                     )}
                     {person.email && (
                         <p>
-                            <strong>Email:</strong> {person.email}
+                            <strong>Email:</strong> <a href={`mailto:${person.email}`} className='hover:underline'>{person.email}</a>
                         </p>
                     )}
                 </ModalDescription>

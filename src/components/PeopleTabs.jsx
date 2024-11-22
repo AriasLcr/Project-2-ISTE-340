@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import PeopleGroup from './PeopleGroup';
 
 const PeopleTabs = () => {
-      //set up vars (useState)
     const [peopleObj, setPeopleObj] = useState();
     const [loaded, setLoaded] = useState(false);
 
@@ -17,7 +16,6 @@ const PeopleTabs = () => {
         </TabPane>},
     ];
 
-    //go get data
     useEffect(() => {
         getData('people/').then((json) => {
             setPeopleObj(json);
@@ -32,11 +30,11 @@ const PeopleTabs = () => {
     );
 
     return (
-        <>
-            <h1 id='People'>{peopleObj.title}</h1>
+        <div id='People' className='w-full flex flex-col justify-center items-center mt-20'>
+            <h1 className='text-5xl '>{peopleObj.title}</h1>
             <h3>{peopleObj.subTitle}</h3>
             <Tab panes={panes} />
-        </>
+        </div>
     )
 };
 

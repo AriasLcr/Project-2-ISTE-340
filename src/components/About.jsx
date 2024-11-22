@@ -3,16 +3,15 @@ import PropTypes from 'prop-types';
 
 const About = ({ ad = {} }) => { 
     return (
-        <div className='w-full flex flex-row'>
-            <div className='m-10 w-1/2'>
-                <h2 className='text-5xl'>{ad.title}</h2>
+        <div id="About" className='w-full flex flex-row justify-center'>
+            <div className='mt-20 w-2/3 xl:w-3/5'>
+                <h2 className='text-5xl my-20'>{ad.title}</h2>
                 <h3 className=''>{ad.description}</h3>
-                <div className='text-gray-500 flex justify-center flex-col items-center'>
+                <div className='text-gray-500 flex justify-center flex-col items-center my-20'>
                     <h4 className=''>{ad.quote}</h4>
                     <h4>--{ad.quoteAuthor}</h4>
                 </div>
             </div>
-            <img src="" alt="" />
         </div>
     );
 };
