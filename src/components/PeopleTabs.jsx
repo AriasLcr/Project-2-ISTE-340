@@ -30,7 +30,7 @@ const PeopleTabs = () => {
     );
 
     return (
-        <div id='People' className='w-full flex flex-col justify-center items-center mt-20'>
+        <div id='People' className='w-full flex flex-col justify-center items-center'>
             <h1 className='text-5xl '>{peopleObj.title}</h1>
             <h3>{peopleObj.subTitle}</h3>
             <Tab panes={panes} />

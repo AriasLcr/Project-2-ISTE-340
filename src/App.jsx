@@ -8,6 +8,7 @@ import Hero from './components/Hero.jsx'
 import './App.css'
 import Degrees from './components/Degrees.jsx'
 import Minors from './components/Minors.jsx'
+import Employment from './components/Employment.jsx'
 
 const App=()=>{
 
@@ -34,6 +35,7 @@ const App=()=>{
       }
       <Degrees />
       <Minors />
+      <Employment />
       <PeopleTabs />
 
       <Footer />
