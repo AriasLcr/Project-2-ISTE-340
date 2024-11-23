@@ -1,3 +1,20 @@
+/**
+ * PeopleTabs component fetches and displays people data categorized into tabs.
+ * 
+ * @component
+ * @returns {JSX.Element} The PeopleTabs component.
+ * 
+ * @description
+ * This component uses the `useEffect` hook to fetch data from the 'people/' endpoint
+ * and stores it in the `peopleObj` state. It displays a loading message until the data
+ * is fully loaded. Once loaded, it renders a tabbed interface with two tabs: Faculty and Staff.
+ * Each tab displays a `PeopleGroup` component with the respective data.
+ * 
+ * @requires semantic-ui-react
+ * @requires ../utils/getData
+ * @requires react
+ * @requires ./PeopleGroup
+ */
 import { TabPane, Tab } from 'semantic-ui-react';
 import getData from '../utils/getData';
 import { useEffect, useState } from 'react';

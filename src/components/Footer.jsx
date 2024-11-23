@@ -1,3 +1,11 @@
+/**
+ * Footer component that displays a footer section with various links and information.
+ *
+ * @component
+ *
+ * @returns {JSX.Element} The rendered footer component.
+ */
+
 import React from "react";
 
 const Footer = () => {

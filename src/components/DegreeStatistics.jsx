@@ -1,3 +1,17 @@
+/**
+ * DegreeStatistics component displays a section with degree statistics.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.degreeStatistics - The degree statistics data.
+ * @param {string} props.degreeStatistics.title - The title of the statistics section.
+ * @param {Array} props.degreeStatistics.statistics - An array of statistics.
+ * @param {Object} props.degreeStatistics.statistics[] - A single statistic.
+ * @param {string|number} props.degreeStatistics.statistics[].value - The value of the statistic.
+ * @param {string} props.degreeStatistics.statistics[].description - The description of the statistic.
+ *
+ * @returns {JSX.Element} The rendered DegreeStatistics component.
+ */
+
 import React from "react";
 
 const DegreeStatistics = ({ degreeStatistics }) => {

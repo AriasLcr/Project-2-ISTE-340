@@ -1,3 +1,11 @@
+/**
+ * Hero component renders a section with a background image and a heading.
+ * 
+ * @component
+ * 
+ * @returns {JSX.Element} A section element with a background image and a heading.
+ */
+
 import React from 'react';
 
 const Hero = () => {

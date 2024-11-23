@@ -1,3 +1,18 @@
+/**
+ * CoopTable component displays a table with cooperative education data,
+ * including search and pagination functionalities.
+ *
+ * @param {Object} props - The component props.
+ * @param {Array} props.coopData - The data to be displayed in the table.
+ * @param {Array} props.coopData.coopInformation - Array of cooperative education information objects.
+ * @param {string} props.coopData.coopInformation[].employer - The employer name.
+ * @param {string} props.coopData.coopInformation[].degree - The degree associated with the cooperative education.
+ * @param {string} props.coopData.coopInformation[].city - The city where the cooperative education took place.
+ * @param {string} props.coopData.coopInformation[].term - The term of the cooperative education.
+ *
+ * @returns {JSX.Element} The CoopTable component.
+ */
+
 import React, { useState } from "react";
 import {
   Table,

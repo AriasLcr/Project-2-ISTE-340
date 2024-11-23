@@ -1,4 +1,17 @@
 /* eslint-disable react/prop-types */
+/**
+ * About component displays information about a given advertisement.
+ * 
+ * @param {Object} props - The properties object.
+ * @param {Object} props.ad - The advertisement object.
+ * @param {string} [props.ad.title] - The title of the advertisement.
+ * @param {string} [props.ad.description] - The description of the advertisement.
+ * @param {string} [props.ad.quote] - A quote related to the advertisement.
+ * @param {string} [props.ad.quoteAuthor] - The author of the quote.
+ * 
+ * @returns {JSX.Element} The rendered About component.
+ */
+
 import PropTypes from 'prop-types';
 
 const About = ({ ad = {} }) => { 

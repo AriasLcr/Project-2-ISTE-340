@@ -1,3 +1,20 @@
+/**
+ * Degrees component fetches and displays a list of undergraduate and graduate degrees
+ * offered by the institution. It uses Material-UI's Accordion component to display
+ * each degree and its details.
+ *
+ * @typedef {Object} Degree
+ * @property {string} degreeName - The name of the degree.
+ * @property {string} title - The title of the degree.
+ * @property {string} description - A brief description of the degree.
+ * @property {string[]} concentrations - A list of concentrations available for the degree.
+ * @property {string[]} [availableCertificates] - A list of available certificates for graduate advanced certificates.
+ *
+ * @typedef {Object} DegreesData
+ * @property {Degree[]} undergraduate - A list of undergraduate degrees.
+ * @property {Degree[]} graduate - A list of graduate degrees.
+ */
+
 import React, { useState, useEffect } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";

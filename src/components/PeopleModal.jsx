@@ -1,3 +1,22 @@
+/**
+ * PeopleModal component displays a modal with detailed information about a person.
+ * 
+ * @param {Object} props - The component props.
+ * @param {Object} props.person - The person object containing details to display.
+ * @param {string} props.person.name - The name of the person.
+ * @param {string} props.person.imagePath - The path to the person's image.
+ * @param {string} props.person.title - The title of the person.
+ * @param {string} [props.person.tagline] - The tagline of the person.
+ * @param {string} [props.person.interestArea] - The interest area of the person.
+ * @param {string} [props.person.office] - The office location of the person.
+ * @param {string} [props.person.phone] - The phone number of the person.
+ * @param {string} [props.person.email] - The email address of the person.
+ * @param {string} [props.person.website] - The website URL of the person.
+ * @param {string} [props.person.twitter] - The Twitter handle of the person.
+ * @param {string} [props.person.facebook] - The Facebook profile of the person.
+ * 
+ * @returns {JSX.Element} The PeopleModal component.
+ */
 import React from 'react';
 import {
     ModalHeader,

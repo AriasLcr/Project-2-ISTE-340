@@ -1,3 +1,14 @@
+/**
+ * PeopleCard component renders a card with information about a person.
+ *
+ * @param {Object} prop - The properties object.
+ * @param {string} prop.imagePath - The path to the image of the person.
+ * @param {string} prop.name - The name of the person.
+ * @param {string} prop.title - The title or position of the person.
+ * @param {string} prop.tagline - A short description or tagline for the person.
+ * @returns {JSX.Element} The rendered PeopleCard component.
+ */
+
 import React from 'react';
 import {
     CardMeta,

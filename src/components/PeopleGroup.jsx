@@ -1,3 +1,13 @@
+/**
+ * PeopleGroup component displays a group of people with pagination controls.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.title - The title to display above the group.
+ * @param {Array} props.obj - The array of people objects to display.
+ *
+ * @returns {JSX.Element} The rendered PeopleGroup component.
+ */
+
 import { useState } from "react";
 import PeopleCard from "./PeopleCard";
 import { TablePagination } from "@mui/material";

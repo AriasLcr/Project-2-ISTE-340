@@ -1,3 +1,12 @@
+/**
+ * Minors component fetches and displays a list of undergraduate minors.
+ * Each minor is displayed in an accordion with its title, description, courses, and optional note.
+ *
+ * @component
+ *
+ * @returns {JSX.Element} The rendered component.
+ */
+
 import React, { useState, useEffect } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";

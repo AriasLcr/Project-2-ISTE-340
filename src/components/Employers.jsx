@@ -1,3 +1,13 @@
+/**
+ * Employers component renders a list of employer names.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.employers - The employers data.
+ * @param {string} props.employers.title - The title for the employers section.
+ * @param {string[]} props.employers.employerNames - The list of employer names.
+ * @returns {JSX.Element} The rendered Employers component.
+ */
+
 import React from "react";
 
 const Employers = ({ employers }) => {

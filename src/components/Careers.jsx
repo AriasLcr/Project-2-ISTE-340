@@ -1,3 +1,13 @@
+/**
+ * Careers component renders a list of career names.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.careers - The careers data.
+ * @param {string} props.careers.title - The title of the careers section.
+ * @param {string[]} props.careers.careerNames - An array of career names.
+ * @returns {JSX.Element} The rendered Careers component.
+ */
+
 import React from "react";
 
 const Careers = ({ careers }) => {

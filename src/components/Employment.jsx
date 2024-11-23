@@ -1,3 +1,13 @@
+/**
+ * Employment component fetches and displays employment-related data.
+ * 
+ * This component uses the `useState` and `useEffect` hooks to manage and fetch data.
+ * It displays a loading message until the data is fetched and then renders various
+ * subcomponents to display the employment data.
+ * 
+ * @component
+ */
+
 import React, {useState, useEffect} from "react";
 import Introduction from "./Introduction";
 import getData from "../utils/getData";

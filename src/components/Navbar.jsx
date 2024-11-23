@@ -1,3 +1,11 @@
+/**
+ * Navbar component that displays a navigation bar with links.
+ * It includes a mobile menu that can be toggled and a desktop menu.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Navbar component.
+ */
+
 import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 
