@@ -1,5 +1,5 @@
 # ISTE-340 Project 2: iSchool Page using React.js
-## iSchool Web Presence Project
+## iSchool Website
 
 This project is a professional web presence for the iSchool at RIT, leveraging information from an existing API and enhancing user experience through custom and third-party React UI components.
 #### Link to project: [iSchool Page - Gabriel Arias](https://people.rit.edu/gma5404/ISTE340/Project-2/)
@@ -49,16 +49,102 @@ This single-page application (SPA) displays data from the iSchool API at RIT, of
    ```
 2. Open your browser and go to `http://localhost:5173` (or the specified port).
 
-### UI Components
+## Components Summary
 
-The following external UI components were used to extend functionality and enhance user experience:
+The project incorporates various components that collectively offer a feature-rich and dynamic user experience. Each component is designed to display data dynamically, interactively, and responsively.
 
-1. **Semantic UI React** - [semantic-ui-react](https://react.semantic-ui.com/)
-   - Used for responsive tab component.
+---
 
-### Custom Components
+### Core Components:
 
-- **People Card Component**: Custom card UI to display detailed information about people.
+1. **About Component**
+   - Displays an advertisement or informational message with a title, description, and optional quote.
+
+2. **Careers Component**
+   - Dynamically renders a list of career opportunities.
+
+3. **Degrees Component**
+   - Fetches and displays undergraduate and graduate degrees using Material-UI Accordion for collapsible sections.
+
+4. **Minors Component**
+   - Displays a list of undergraduate minors with collapsible sections for detailed information.
+
+5. **Employment Component**
+   - Displays employment-related information, such as degree statistics, employer lists, and career opportunities, integrating subcomponents for a cohesive presentation.
+
+6. **Hero Component**
+   - A visually striking header with a background image and a bold tagline.
+
+7. **Navbar Component**
+   - Responsive navigation bar with interactive desktop and mobile layouts.
+
+8. **Footer Component**
+   - Displays social media links, quick links, and copyright details, fetching data dynamically.
+
+---
+
+### Subcomponents:
+
+1. **CoopTable Component**
+   - Interactive table with search and pagination for cooperative education data.
+
+2. **EmploymentTable Component**
+   - Searchable and paginated table displaying professional employment information.
+
+3. **DegreeStatistics Component**
+   - Showcases statistics related to degree programs in a visually appealing grid layout.
+
+4. **Employers Component**
+   - Lists employers who hire graduates dynamically.
+
+5. **Introduction Component**
+   - Displays a title and a list of content items with detailed descriptions.
+
+---
+
+### People Components:
+
+1. **PeopleTabs Component**
+   - Tabbed interface for displaying Faculty and Staff categories dynamically.
+
+2. **PeopleGroup Component**
+   - Groups and paginates people data into interactive card layouts.
+
+3. **PeopleCard Component**
+   - Individual card with a person's image, title, and a modal for detailed information.
+
+4. **PeopleModal Component**
+   - Modal providing a detailed view of a person, including social links and contact information.
+
+---
+
+### Above and Beyond
+The project goes "above and beyond" by implementing the following advanced features:
+
+1. **Dynamic Data Handling**
+   - All components dynamically fetch and render data from external APIs, ensuring scalability and maintainability.
+
+2. **Interactivity**
+   - Interactive features like:
+     - **Accordion menus** for Degrees and Minors.
+     - **Tabs** for categorizing and displaying Faculty and Staff.
+     - **Modals** for detailed person views.
+     - **Searchable and paginated tables** for employment and cooperative education data.
+
+3. **Search & Pagination**
+   - **CoopTable** and **EmploymentTable** include dynamic search filters and pagination, allowing users to navigate large datasets efficiently.
+
+4. **Responsive Design**
+   - All components adapt seamlessly to various screen sizes, from mobile devices to desktops, ensuring accessibility for all users.
+
+5. **Third-Party UI Libraries**
+   - **Material-UI**: Used for Accordions, Tables, and Pagination to enhance the UI/UX.
+   - **Semantic UI React**: Used for Navbar, Modals, Cards, and Tabs to provide a polished and professional design.
+  - **TailwindCSS**: Used for styling of the website.
+
+6. **Reusable and Modular Design**
+   - Components like **PeopleGroup**, **PeopleCard**, and **PeopleModal** are designed to be reusable and modular, following industry-standard practices.
+
 
 ## API Reference
 
