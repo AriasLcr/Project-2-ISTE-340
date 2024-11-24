@@ -41,3 +41,24 @@ body {
 .navbar-link {
     margin-left: 1rem;
 }
+
+.map-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.map-content {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}

@@ -15,6 +15,7 @@ import DegreeStatistics from "./DegreeStatistics";
 import Employers from "./Employers";
 import Careers from "./Careers";
 import CoopTable from "./CoopTable";
+import EmploymentTable from "./EmploymentTable";
 
 const Employment = () => {
     const [employment, setEmployment] = useState();
@@ -34,6 +35,7 @@ const Employment = () => {
             </div>
         );
     }
+
     return (
         <section id="Employment" className="w-full flex justify-center flex-col items-center py-10">
             <h1 className="text-5xl">Employment</h1>
@@ -43,6 +45,7 @@ const Employment = () => {
             <Employers employers={employment.employers} />
             <Careers careers={employment.careers} />
             <CoopTable coopData={employment.coopTable} />
+            <EmploymentTable employmentData={employment.employmentTable} />
             </div>
           </section>
       );

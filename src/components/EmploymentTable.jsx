@@ -1,16 +1,16 @@
 /**
- * CoopTable component displays a table with cooperative education data,
- * including search and pagination functionalities.
+ * EmploymentTable component displays a searchable and paginated table of employment data.
  *
  * @param {Object} props - The component props.
- * @param {Array} props.coopData - The data to be displayed in the table.
- * @param {Array} props.coopData.coopInformation - Array of cooperative education information objects.
- * @param {string} props.coopData.coopInformation[].employer - The employer name.
- * @param {string} props.coopData.coopInformation[].degree - The degree associated with the cooperative education.
- * @param {string} props.coopData.coopInformation[].city - The city where the cooperative education took place.
- * @param {string} props.coopData.coopInformation[].term - The term of the cooperative education.
+ * @param {Object} props.employmentData - The employment data to display.
+ * @param {Array} props.employmentData.professionalEmploymentInformation - Array of employment information objects.
+ * @param {string} props.employmentData.professionalEmploymentInformation[].employer - The employer name.
+ * @param {string} props.employmentData.professionalEmploymentInformation[].degree - The degree associated with the employment.
+ * @param {string} props.employmentData.professionalEmploymentInformation[].city - The city of the employment.
+ * @param {string} props.employmentData.professionalEmploymentInformation[].title - The job title.
+ * @param {string} props.employmentData.professionalEmploymentInformation[].startDate - The start date of the employment.
  *
- * @returns {JSX.Element} The CoopTable component.
+ * @returns {JSX.Element} The EmploymentTable component.
  */
 
 import React, { useState } from "react";
@@ -26,13 +26,13 @@ import {
   TablePagination,
 } from "@mui/material";
 
-const CoopTable = ({ coopData }) => {
+const EmploymentTable = ({ employmentData }) => {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(0); // Current page
   const [rowsPerPage, setRowsPerPage] = useState(10); // Rows per page
 
   // Filter data based on search input
-  const filteredData = coopData.coopInformation.filter((row) =>
+  const filteredData = employmentData.professionalEmploymentInformation.filter((row) =>
     Object.values(row).some((value) =>
       String(value).toLowerCase().includes(search.toLowerCase())
     )
@@ -56,7 +56,7 @@ const CoopTable = ({ coopData }) => {
 
   return (
     <div className="my-5">
-      <h2> Co-op Table</h2>
+        <h2> Employment Table </h2>
       {/* Search Input */}
       <TextField
         variant="outlined"
@@ -74,7 +74,8 @@ const CoopTable = ({ coopData }) => {
               <TableCell>Employer</TableCell>
               <TableCell>Degree</TableCell>
               <TableCell>City</TableCell>
-              <TableCell>Term</TableCell>
+              <TableCell>Title</TableCell>
+              <TableCell>Start Date</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -83,7 +84,8 @@ const CoopTable = ({ coopData }) => {
                 <TableCell>{row.employer}</TableCell>
                 <TableCell>{row.degree}</TableCell>
                 <TableCell>{row.city}</TableCell>
-                <TableCell>{row.term}</TableCell>
+                <TableCell>{row.title}</TableCell>
+                <TableCell>{row.startDate}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -104,4 +106,4 @@ const CoopTable = ({ coopData }) => {
   );
 };
 
-export default CoopTable;
+export default EmploymentTable;
