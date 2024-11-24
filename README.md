@@ -140,7 +140,7 @@ The project goes "above and beyond" by implementing the following advanced featu
 5. **Third-Party UI Libraries**
    - **Material-UI**: Used for Accordions, Tables, and Pagination to enhance the UI/UX.
    - **Semantic UI React**: Used for Navbar, Modals, Cards, and Tabs to provide a polished and professional design.
-  - **TailwindCSS**: Used for styling of the website.
+   - **TailwindCSS**: Used for styling of the website.
 
 6. **Reusable and Modular Design**
    - Components like **PeopleGroup**, **PeopleCard**, and **PeopleModal** are designed to be reusable and modular, following industry-standard practices.
