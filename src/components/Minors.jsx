@@ -90,7 +90,7 @@ const Minors = () => {
                       className="bg-gray-50"
                     >
                       <p className="text-sm font-medium">
-                        {courses[courseID]?.title || "Course Title Not Found"}
+                        {courseID || ""} {courses[courseID]?.title || "Course Title Not Found"}
                       </p>
                     </AccordionSummary>
                     <AccordionDetails>
